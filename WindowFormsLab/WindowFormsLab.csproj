@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99DCCEE9-BEA2-4C9D-A4DC-71514DEA7FA3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowFormsLab</RootNamespace>
+    <AssemblyName>WindowFormsLab</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\ControllerCheckPass.cs" />
+    <Compile Include="Controller\ControllerClinic.cs" />
+    <Compile Include="Controller\ControllerConvertNumberToString.cs" />
+    <Compile Include="Controller\ControllerLogin.cs" />
+    <Compile Include="Controller\ControllerMaxMinThreeNumber.cs" />
+    <Compile Include="Controller\ControllerSumANumber.cs" />
+    <Compile Include="Controller\ControllerTime.cs" />
+    <Compile Include="Controller\ControlllerMaxMinTwoNumber.cs" />
+    <Compile Include="Forms\FormCheckPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCheckPass.Designer.cs">
+      <DependentUpon>FormCheckPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormClinic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormClinic.Designer.cs">
+      <DependentUpon>FormClinic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormConvertNumberToString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormConvertNumberToString.Designer.cs">
+      <DependentUpon>FormConvertNumberToString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMaxMinThreeNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMaxMinThreeNumber.Designer.cs">
+      <DependentUpon>FormMaxMinThreeNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMaxMinTwoNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMaxMinTwoNumber.Designer.cs">
+      <DependentUpon>FormMaxMinTwoNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSumANumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSumANumber.Designer.cs">
+      <DependentUpon>FormSumANumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTime.Designer.cs">
+      <DependentUpon>FormTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormCheckPass.resx">
+      <DependentUpon>FormCheckPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormClinic.resx">
+      <DependentUpon>FormClinic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormConvertNumberToString.resx">
+      <DependentUpon>FormConvertNumberToString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMaxMinThreeNumber.resx">
+      <DependentUpon>FormMaxMinThreeNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMaxMinTwoNumber.resx">
+      <DependentUpon>FormMaxMinTwoNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSumANumber.resx">
+      <DependentUpon>FormSumANumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTime.resx">
+      <DependentUpon>FormTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\619eb1424ce28fbcd6f3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-dai-hoc-gia-dinh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-dai-hoc-gia-dinh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-dai-hoc-gia-dinh2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
