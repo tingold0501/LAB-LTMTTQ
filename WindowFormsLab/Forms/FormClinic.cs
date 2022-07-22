@@ -22,8 +22,8 @@ namespace WindowFormsLab.Forms
         private void btnCheckName_Click(object sender, EventArgs e)
         {
             string name = tbFullName.Text;
-            string gender = lbGender.GetItemText(lbGender.SelectedValue);
-            controller.checkInformation(name,gender);
+            string gender = lbGender.SelectedItem.ToString();
+            controller.checkInformation(name, gender);
         }
     }
 }

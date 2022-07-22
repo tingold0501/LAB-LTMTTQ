@@ -24,16 +24,14 @@ namespace WindowFormsLab.Controller
         }
         public void checkInformation(string name,string gender)
         {
-            //if(name == "" || gender == "" )
-            //{
-            //    MessageBox.Show("Vui Lòng Nhập Tên Ạ !!! Pờ Lyyyy");
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Tên Của Bạn Là: " + name + "Giới Tính Của Bạn Là: " + gender);
-            //}
-
-            MessageBox.Show(name + gender.ToString());
+            if (name == "" || gender == "")
+            {
+                MessageBox.Show("Đừng Để Trống Mà!!! Pờ Lyyy");
+            }
+            else
+            {
+                MessageBox.Show("Tên Của Bạn Là: " + name + " "+"Giới Tính Của Bạn Là: " + gender);
+            }
         }
     }
 }

@@ -30,26 +30,26 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tbTong = new System.Windows.Forms.TextBox();
+            this.btTinhTong = new System.Windows.Forms.Button();
+            this.numberTrongRang = new System.Windows.Forms.NumericUpDown();
+            this.numberNhoRang = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.CheckBoxNiemRang = new System.Windows.Forms.CheckBox();
             this.checkBoxTayRang = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnCheckName = new System.Windows.Forms.Button();
             this.lbGender = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tbFullName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.numberNhoRang = new System.Windows.Forms.NumericUpDown();
-            this.numberTrongRang = new System.Windows.Forms.NumericUpDown();
-            this.btTinhTong = new System.Windows.Forms.Button();
-            this.tbTong = new System.Windows.Forms.TextBox();
-            this.btnCheckName = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numberNhoRang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numberTrongRang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numberNhoRang)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -79,6 +79,56 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dịch Vụ";
+            // 
+            // tbTong
+            // 
+            this.tbTong.Location = new System.Drawing.Point(190, 259);
+            this.tbTong.Name = "tbTong";
+            this.tbTong.Size = new System.Drawing.Size(167, 28);
+            this.tbTong.TabIndex = 7;
+            // 
+            // btTinhTong
+            // 
+            this.btTinhTong.Location = new System.Drawing.Point(45, 255);
+            this.btTinhTong.Name = "btTinhTong";
+            this.btTinhTong.Size = new System.Drawing.Size(110, 32);
+            this.btTinhTong.TabIndex = 6;
+            this.btTinhTong.Text = "Tính Tổng";
+            this.btTinhTong.UseVisualStyleBackColor = true;
+            // 
+            // numberTrongRang
+            // 
+            this.numberTrongRang.Location = new System.Drawing.Point(242, 171);
+            this.numberTrongRang.Name = "numberTrongRang";
+            this.numberTrongRang.Size = new System.Drawing.Size(76, 28);
+            this.numberTrongRang.TabIndex = 5;
+            // 
+            // numberNhoRang
+            // 
+            this.numberNhoRang.Location = new System.Drawing.Point(242, 123);
+            this.numberNhoRang.Name = "numberNhoRang";
+            this.numberNhoRang.Size = new System.Drawing.Size(76, 28);
+            this.numberNhoRang.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(82, 177);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 22);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Trồng Răng";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(82, 125);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 22);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Nhổ Răng";
             // 
             // CheckBoxNiemRang
             // 
@@ -114,6 +164,16 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Khách Hàng";
+            // 
+            // btnCheckName
+            // 
+            this.btnCheckName.Location = new System.Drawing.Point(297, 75);
+            this.btnCheckName.Name = "btnCheckName";
+            this.btnCheckName.Size = new System.Drawing.Size(122, 38);
+            this.btnCheckName.TabIndex = 4;
+            this.btnCheckName.Text = "Kiểm Tra";
+            this.btnCheckName.UseVisualStyleBackColor = true;
+            this.btnCheckName.Click += new System.EventHandler(this.btnCheckName_Click);
             // 
             // lbGender
             // 
@@ -162,66 +222,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ỨNG DỤNG TÍNH TIỀN PHÒNG KHÁM";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(82, 125);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 22);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Nhổ Răng";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(82, 177);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 22);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Trồng Răng";
-            // 
-            // numberNhoRang
-            // 
-            this.numberNhoRang.Location = new System.Drawing.Point(242, 123);
-            this.numberNhoRang.Name = "numberNhoRang";
-            this.numberNhoRang.Size = new System.Drawing.Size(76, 28);
-            this.numberNhoRang.TabIndex = 4;
-            // 
-            // numberTrongRang
-            // 
-            this.numberTrongRang.Location = new System.Drawing.Point(242, 171);
-            this.numberTrongRang.Name = "numberTrongRang";
-            this.numberTrongRang.Size = new System.Drawing.Size(76, 28);
-            this.numberTrongRang.TabIndex = 5;
-            // 
-            // btTinhTong
-            // 
-            this.btTinhTong.Location = new System.Drawing.Point(45, 255);
-            this.btTinhTong.Name = "btTinhTong";
-            this.btTinhTong.Size = new System.Drawing.Size(110, 32);
-            this.btTinhTong.TabIndex = 6;
-            this.btTinhTong.Text = "Tính Tổng";
-            this.btTinhTong.UseVisualStyleBackColor = true;
-            // 
-            // tbTong
-            // 
-            this.tbTong.Location = new System.Drawing.Point(190, 259);
-            this.tbTong.Name = "tbTong";
-            this.tbTong.Size = new System.Drawing.Size(167, 28);
-            this.tbTong.TabIndex = 7;
-            // 
-            // btnCheckName
-            // 
-            this.btnCheckName.Location = new System.Drawing.Point(297, 75);
-            this.btnCheckName.Name = "btnCheckName";
-            this.btnCheckName.Size = new System.Drawing.Size(122, 38);
-            this.btnCheckName.TabIndex = 4;
-            this.btnCheckName.Text = "Kiểm Tra";
-            this.btnCheckName.UseVisualStyleBackColor = true;
-            this.btnCheckName.Click += new System.EventHandler(this.btnCheckName_Click);
-            // 
             // FormClinic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -234,10 +234,10 @@
             this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numberTrongRang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numberNhoRang)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numberNhoRang)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numberTrongRang)).EndInit();
             this.ResumeLayout(false);
 
         }
